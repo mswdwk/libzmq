@@ -1,6 +1,6 @@
 # CMake build script for ZeroMQ tests
 cmake_minimum_required(VERSION "2.8.1")
-
+set(CMAKE_C_FLAGS "-std=gnu99 ${CMAKE_C_FLAGS}")
 # On Windows: solution file will be called tests.sln
 PROJECT(tests)
 
